@@ -3495,7 +3495,6 @@ PRODUCT_PACKAGES += \
     nfc_nci.nqx.default.hw \
     panel_als_comp_filter_rtwo \
     vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor \
-    vendor.nxp.hardware.nfc@2.0 \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     MotoSignatureApp \

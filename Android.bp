@@ -5,13 +5,16 @@
 soong_namespace {
     imports: [
         "vendor/motorola/sm8550-common",
-        "hardware/qcom-caf/sm8550",
-        "hardware/qcom-caf/wlan",
+        "hardware/qcom/display",
+        "hardware/qcom/display/libdebug",
+        "hardware/qcom/display/gralloc",
+        "hardware/qcom/wlan",
         "hardware/motorola",
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/commonsys/display",
         "vendor/qcom/opensource/dataservices",
-        "vendor/qcom/opensource/display",
+        "vendor/qcom/common/system/perf",
+        "vendor/qcom/common/vendor/perf",
     ],
 }
 
@@ -8481,7 +8484,9 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.nxp.hardware.nfc@2.0",
+    name: "vendor.nxp.hardware.nfc@2.0_vendor",
+    stem: "vendor.nxp.hardware.nfc@2.0",
+    enabled: false,
     owner: "motorola",
     strip: {
         none: true,
